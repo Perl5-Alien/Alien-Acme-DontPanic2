@@ -1,8 +1,12 @@
 language: perl
 
+sudo: false
+
 install:
   - curl https://perl5-alien.github.io/static/travis/install-system-dontpanic.sh | bash -
-  - cpanm --installdeps -n .
+  - ./maint/travis-install-alienbuild
+  - dzil authordeps --missing | cpanm -n
+  - dzil alistdeps  --missing | cpanm -n
 
 perl:
   - "5.14"
@@ -13,9 +17,7 @@ perl:
   - "5.24"
 
 script:
-  - perl Build.PL
-  - ./Build
-  - ./Build test verbose=1
+  - dzil test -v
 
 env:
   global:

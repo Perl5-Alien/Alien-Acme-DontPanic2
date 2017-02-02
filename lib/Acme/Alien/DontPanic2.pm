@@ -3,18 +3,14 @@ package Acme::Alien::DontPanic2;
 use strict;
 use warnings;
 
-our $VERSION = '0.031';
-$VERSION = eval $VERSION;
+# ABSTRACT: Test Module for Alien::Base + Alien::Build
+# VERSION
 
-use parent 'Alien::Base';
+use base 'Alien::Base2';
 
 1;
 
 __END__
-
-=head1 NAME
-
-Acme::Alien::DontPanic2 - Test Module for Alien::Base
 
 =head1 DESCRIPTION
 
@@ -43,19 +39,6 @@ L<Acme::Ford::Prefect>
 =head1 SOURCE REPOSITORY
 
 L<http://github.com/Perl5-Alien/Acme-Alien-DontPanic2>
-
-=head1 AUTHOR
-
-Original author: Joel Berger, E<lt>joel.a.berger@gmail.comE<gt>
-
-Current maintainer: Graham Ollis E<lt>plicease@cpan.orgE<gt>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2012 by Joel Berger
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
 
 =cut
 

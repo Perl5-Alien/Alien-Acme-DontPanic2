@@ -4,6 +4,8 @@ use Test2::Bundle::More;
 use Test::Alien 0.05;
 use Acme::Alien::DontPanic2;
 
+skip_all 'FFI not supported (yet)';
+
 plan 3;
 
 alien_ok 'Acme::Alien::DontPanic2';
