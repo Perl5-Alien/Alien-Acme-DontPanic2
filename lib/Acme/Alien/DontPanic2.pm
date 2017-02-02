@@ -1,4 +1,4 @@
-package Acme::Alien::DontPanic;
+package Acme::Alien::DontPanic2;
 
 use strict;
 use warnings;
@@ -14,7 +14,7 @@ __END__
 
 =head1 NAME
 
-Acme::Alien::DontPanic - Test Module for Alien::Base
+Acme::Alien::DontPanic2 - Test Module for Alien::Base
 
 =head1 DESCRIPTION
 
@@ -42,7 +42,7 @@ L<Acme::Ford::Prefect>
 
 =head1 SOURCE REPOSITORY
 
-L<http://github.com/Perl5-Alien/Acme-Alien-DontPanic>
+L<http://github.com/Perl5-Alien/Acme-Alien-DontPanic2>
 
 =head1 AUTHOR
 

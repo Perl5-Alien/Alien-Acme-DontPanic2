@@ -1,8 +1,8 @@
 use Test2::Bundle::Extended;
 use Test::Alien;
-use Acme::Alien::DontPanic;
+use Acme::Alien::DontPanic2;
 
-alien_ok 'Acme::Alien::DontPanic';
+alien_ok 'Acme::Alien::DontPanic2';
 
 run_ok('dontpanic')
   ->success

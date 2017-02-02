@@ -78,6 +78,6 @@
 ^MANIFEST\.SKIP
 
 # Avoid archives of this distribution
-\bAcme-Alien-DontPanic-[\d\.\_]+
+\bAcme-Alien-DontPanic2-[\d\.\_]+
 \b_alien/
 \b_share/

@@ -14,7 +14,7 @@ if($^O eq 'midnightbsd')
 }
 
 my $builder = Alien::Base::ModuleBuild->new(
-  module_name => 'Acme::Alien::DontPanic',
+  module_name => 'Acme::Alien::DontPanic2',
   license => 'perl',
   configure_requires => {
     'Alien::Base::ModuleBuild' => '0.031',
@@ -47,8 +47,8 @@ my $builder = Alien::Base::ModuleBuild->new(
   alien_inline_auto_include => [ 'libdontpanic.h' ],
   meta_merge => {
     resources  => {
-      repository => "http://github.com/Perl5-Alien/Acme-Alien-DontPanic",
-      bugtracker => "http://github.com/Perl5-Alien/Acme-Alien-DontPanic/issues",
+      repository => "http://github.com/Perl5-Alien/Acme-Alien-DontPanic2",
+      bugtracker => "http://github.com/Perl5-Alien/Acme-Alien-DontPanic2/issues",
       x_MailingList => 'https://groups.google.com/forum/#!forum/perl5-alien',
       x_IRC => "irc://irc.perl.org/#native",
     },
@@ -57,7 +57,6 @@ my $builder = Alien::Base::ModuleBuild->new(
 );
 
 $builder->add_to_cleanup(
-  'inc/dontpanic',
   't/static_link/*.o',
   't/static_link/main.so',
   't/static_link/main.dll',

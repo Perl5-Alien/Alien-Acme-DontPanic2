@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Acme::Alien::DontPanic ();
+use Acme::Alien::DontPanic2 ();
 use ExtUtils::CBuilder;
 use Test::More tests => 3;
 use File::Spec;
@@ -29,7 +29,7 @@ my $extra_linker_flags = join ' ', map { "-L$_" } (
   )),
 );
 
-$extra_linker_flags .= ' ' . Acme::Alien::DontPanic->libs;
+$extra_linker_flags .= ' ' . Acme::Alien::DontPanic2->libs;
 $extra_linker_flags =~ s/\s+$//;
   
 
@@ -40,7 +40,7 @@ my($compile_output, $obj) = capture_merged {
     $b->compile(
       source               => $src,
       include_dirs         => $include_dirs,
-      extra_compiler_flags => Acme::Alien::DontPanic->cflags,
+      extra_compiler_flags => Acme::Alien::DontPanic2->cflags,
     );
   };
 };

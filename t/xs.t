@@ -2,11 +2,11 @@ use strict;
 use warnings;
 use Test2::Bundle::More;
 use Test::Alien 0.05;
-use Acme::Alien::DontPanic;
+use Acme::Alien::DontPanic2;
 
 plan 3;
 
-alien_ok 'Acme::Alien::DontPanic';
+alien_ok 'Acme::Alien::DontPanic2';
 
 xs_ok do { local $/; <DATA> }, with_subtest {
   my($module) = @_;

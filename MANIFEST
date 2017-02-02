@@ -1,7 +1,7 @@
 .travis.yml
 Build.PL
 Changes
-lib/Acme/Alien/DontPanic.pm
+lib/Acme/Alien/DontPanic2.pm
 MANIFEST			This list of files
 META.json
 META.yml
