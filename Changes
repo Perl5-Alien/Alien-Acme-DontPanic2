@@ -2,6 +2,9 @@ Revision history for Perl {{$dist->name}}
 
 {{$NEXT}}
 
+0.0800    2017-02-04 11:50:13 -0500
+  - Require Alien::Build 0.08
+
 0.0500    2017-02-02 13:37:39 -0500
   - Fork of the original Acme::Alien::DontPanic that uses
     Alien::Build + Alien::Build::MB
