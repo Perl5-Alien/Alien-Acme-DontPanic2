@@ -18,7 +18,6 @@ $modules{$_} = $_ for qw(
   File::Spec
   IPC::Cmd
   Module::Build
-  PkgConfig::LibPkgConf::Client
   Test2::Suite
   Test::Alien
   Test::More
