@@ -2,11 +2,11 @@ package Acme::Alien::DontPanic2;
 
 use strict;
 use warnings;
+use base 'Alien::Base';
 
 # ABSTRACT: Test Module for Alien::Base + Alien::Build
 # VERSION
 
-use base 'Alien::Base2';
 
 1;
 
