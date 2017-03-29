@@ -5,6 +5,7 @@ sudo: false
 install:
   - curl https://perl5-alien.github.io/static/travis/install-system-dontpanic.sh | bash -
   - ./maint/travis-install-alienbuild
+  - cpanm -n App::af
   - af missing | cpanm -n
   - dzil authordeps --missing | cpanm -n
   - dzil listdeps  --missing | cpanm -n
