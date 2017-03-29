@@ -2,6 +2,9 @@ Revision history for Perl {{$dist->name}}
 
 {{$NEXT}}
 
+0.3200    2017-03-29 14:39:20 -0400
+  - Require Alien::Build 0.32 Alien::Build::MB 0.02
+
 0.2100    2017-03-06 00:26:02 -0500
   - Require Alien::Build 0.21
 
