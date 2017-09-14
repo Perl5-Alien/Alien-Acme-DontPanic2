@@ -2,8 +2,6 @@ use Test2::V0 -no_srand => 1;
 use Test::Alien 0.05;
 use Acme::Alien::DontPanic2;
 
-skip_all 'FFI not supported (yet)';
-
 plan 3;
 
 alien_ok 'Acme::Alien::DontPanic2';
