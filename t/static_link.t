@@ -1,4 +1,4 @@
-use Test2::V0;
+use Test2::V0 -no_srand => 1;
 use Acme::Alien::DontPanic2 ();
 use ExtUtils::CBuilder;
 use File::Spec;
