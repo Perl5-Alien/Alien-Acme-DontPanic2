@@ -4,11 +4,25 @@ use Acme::Alien::DontPanic2;
 
 alien_ok 'Acme::Alien::DontPanic2';
 
-xs_ok do { local $/; <DATA> }, with_subtest {
+my $xs = do { local $/; <DATA> };
+
+xs_ok $xs, with_subtest {
   my($module) = @_;
   plan 1;
   is $module->answer, 42, 'answer is 42';
 };
+
+ffi_ok { symbols => ['answer'] }, with_subtest {
+  my($ffi) = @_;
+  my $answer = $ffi->function(answer=>[]=>'int')->call;
+  plan 1;
+  is $answer, 42;
+};
+
+run_ok('dontpanic')
+  ->success
+  ->out_like(qr{the answer to life the universe and everything is 42})
+  ->note;
 
 done_testing;
 
