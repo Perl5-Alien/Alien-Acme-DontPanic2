@@ -21,6 +21,8 @@ share {
   ffi {
   
     build [
+      # TODO: under windows, dll is installed in bin.  setting --bindir doesn't seem to work for the .dll
+      # only the .exe.
       '%{configure} --enable-shared --disable-static --libdir=%{.install.autoconf_prefix}/dynamic',
       '%{make}',
       '%{make} install',
