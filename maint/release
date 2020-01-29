@@ -54,4 +54,5 @@ my $input = <STDIN>;
 
 die 'not right apparently' unless $input =~ /^y/i;
 
-exec 'dzil', 'release';
+system 'dzil', 'release' or die;
+system 'cpanm', "Acme-Alien-DontPanic2-@{[ Alien::Build->VERSION . '00' ]}.tar.gz";
