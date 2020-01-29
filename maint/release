@@ -40,7 +40,7 @@ use Alien::Build ();
   my $blank = shift @lines;
   my $next  = shift @lines;
 
-  unshift @lines, $title, $blank, $next
+  unshift @lines, $title, $blank, $next,
     "Require Alien::Build @{[ Alien::Build->VERSION ]}\n";
 
   path('Changes')->spew(@lines);
