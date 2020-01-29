@@ -48,7 +48,7 @@ use Alien::Build ();
 
 system 'git', 'diff';
 
-print "does that look right? "
+print "does that look right? ";
 
 my $input = <STDIN>;
 
