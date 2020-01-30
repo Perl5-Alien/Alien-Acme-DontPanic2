@@ -8,4 +8,10 @@ cd $(ls -1)
 dzil-dzil authordeps --missing | dzil-cpanm -n
 dzil-dzil install --install-command 'cpanm -n .'
 
+cd $(mktemp -d)
+curl -L https://github.com/Perl5-Alien/Alien-Build-MB/tarball/master | tar zxf -
+cd $(ls -1)
+dzil-dzil authordeps --missing | dzil-cpanm -n
+dzil-dzil install --install-command 'cpanm -n .'
+
 
