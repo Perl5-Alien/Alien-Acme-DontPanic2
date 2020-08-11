@@ -16,7 +16,7 @@ This module is a toy module to test the efficacy of the [Alien::Base](https://me
 
 # SOURCE REPOSITORY
 
-[http://github.com/Perl5-Alien/Acme-Alien-DontPanic2](http://github.com/Perl5-Alien/Acme-Alien-DontPanic2)
+[http://github.com/PerlAlien/Acme-Alien-DontPanic2](http://github.com/PerlAlien/Acme-Alien-DontPanic2)
 
 # AUTHORS
 

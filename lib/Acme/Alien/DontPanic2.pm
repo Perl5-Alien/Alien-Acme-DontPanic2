@@ -38,7 +38,7 @@ L<Acme::Ford::Prefect>
 
 =head1 SOURCE REPOSITORY
 
-L<http://github.com/Perl5-Alien/Acme-Alien-DontPanic2>
+L<http://github.com/PerlAlien/Acme-Alien-DontPanic2>
 
 =cut
 
