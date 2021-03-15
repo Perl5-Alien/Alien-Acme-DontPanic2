@@ -1,4 +1,4 @@
-# Acme::Alien::DontPanic2 [![Build Status](https://travis-ci.org/PerlAlien/Acme-Alien-DontPanic2.svg)](http://travis-ci.org/PerlAlien/Acme-Alien-DontPanic2)
+# Acme::Alien::DontPanic2 ![linux](https://github.com/PerlAlien/Acme-Alien-DontPanic2/workflows/linux/badge.svg)
 
 Test Module for Alien::Base + Alien::Build
 
