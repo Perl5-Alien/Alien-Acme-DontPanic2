@@ -1,6 +1,7 @@
 Revision history for Perl {{$dist->name}}
 
 {{$NEXT}}
+  - Use digest (gh#8)
 
 2.2901    2020-08-28 10:37:03 -0600
   - Migrate inline tests from ABMB.
