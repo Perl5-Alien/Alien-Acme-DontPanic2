@@ -1,6 +1,7 @@
 Revision history for Perl {{$dist->name}}
 
 {{$NEXT}}
+  - Use digest (gh#8)
 
 2.5300    2022-08-12 14:27:31 -0600
   - Require Alien::Build 2.53
