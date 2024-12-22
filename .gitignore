@@ -1,3 +1,5 @@
 /Acme-Alien-DontPanic2-*
 /.build
 *.swp
+*.old
+*.orig
